@@ -10,8 +10,8 @@ ap.add_argument("--input_currency", required=True, type=unicode,
                 help="Currency code or symbol you want to convert FROM.")
 ap.add_argument("--output_currency", required=False, type=unicode,
                 help="Currency code or symbol you want to convert TO. If omitted, convert to all known currencies.")
-# args = ap.parse_args()
-args = ap.parse_args(['--amount', '100.258', '--input_currency', u'£', '--output_currency', u'Kč'])
+args = ap.parse_args()
+# args = ap.parse_args(['--amount', '100.258', '--input_currency', u'£', '--output_currency', u'Kč'])
 n = args.amount
 ic = args.input_currency
 oc = args.output_currency
